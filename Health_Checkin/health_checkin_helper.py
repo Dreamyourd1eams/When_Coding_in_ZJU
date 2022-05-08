@@ -176,7 +176,7 @@ class HealthCheckInHelper(ZJULogin):
             "zgfx14rfh": "0",
             "sfyxjzxgym": "1",
             "sfbyjzrq": "5",
-            "jzxgymqk": "2",
+            "jzxgymqk": "4",  # 这里是第三针相关参数，1是已接种第一针，4是已接种第二针（已满6个月），5是已接种第二针（未满6个月），6是已接种第三针，3是未接种，记得自己改
             "campus": campus,
             "ismoved": "0",
             "tw": "0",
@@ -200,6 +200,7 @@ class HealthCheckInHelper(ZJULogin):
             "sfyqjzgc": "0",
             "sfsqhzjkk": "1",
             "sqhzjkkys": "1",
+            'campus': '西溪校区',
             # 日期
             'date': get_date(),
             'created': round(time.time()),
@@ -222,7 +223,7 @@ class HealthCheckInHelper(ZJULogin):
             delay_run: 是否延迟运行
             lng: 经度
             lat: 维度
-            campus: 校区, 如玉泉校区
+            campus: 西溪校区
         Returns:
         """
         print("正在为{}健康打卡".format(self.username))
